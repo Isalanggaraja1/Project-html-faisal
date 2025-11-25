@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil — M. Faisal</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Styling kecil agar mirip sketsa */
+    body { background: #f8f9fa; }
+    .profile-avatar {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .hero {
+      padding: 48px 0;
+      background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+    }
+    .projects .card {
+      min-height: 260px;
+    }
+    .note-box {
+      border: 1px dashed #c2c7cc;
+      background: #fff;
+      padding: 12px;
+    }
+    /* responsive small tweak */
+    @media (max-width: 576px) {
+      .profile-avatar { width: 110px; height: 110px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div id="home" class="container text-center">
+
+      <img src="logo.jpg" class="img-fluid" alt="profile">
+
+      <h2 class="mb-0">M. FAISAL</h2>
+      <div class="text-muted">Murid Official SMK As-Saabiq</div>
+
+      <hr class="my-4">
+
+      <div id="about" class="row justify-content-center">
+        <div class="col-lg-8">
+          <h5 class="mb-2">Tentang Saya — Profil Singkat</h5>
+          <p class="small text-muted">
+            nama saya adalah faisal biasa di sebut isal, saya adalah orang biasa yang menjalani hidup sebagai murid biasa. saya biasanya suka ngoding(kalau ada niat), dan menggambar(kau ada keinginan).<br>
+            saya biasanya kalau mau melakukan hal produktif selalu ngoding dulu supaya tidak ngantuk saat ngoding, begitu pula saat ingin menggambar
+          </p>
+
+          <div class="card text-bg-info mb-3">
+            <small>
+              ini adalah informasi terbaru dari saya mohon untuk dibaca dengan teliti supaya tidak ada yang gagal faham dari info ini
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h4 class="mb-4">Project Saya</h4>
+      <div class="row g-3 projects">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="project1.jpg" class="card-img-top" alt="project-1">
+            <div class="card-body">
+              <h6 class="card-title">Deskripsi</h6>
+              <p class="card-text small text-muted">Deskripsi singkat: saya membuat project fotopolio tapi versi manual.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="project2.jpg" class="card-img-top" alt="project-2">
+            <div class="card-body">
+              <h6 class="card-title">Deskripsi</h6>
+              <p class="card-text small text-muted">Deskripsi singkat: saya membuat project biografi seseorang.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="project3.jpg" class="card-img-top" alt="project-3">
+            <div class="card-body">
+              <h6 class="card-title">Deskripsi</h6>
+              <p class="card-text small text-muted">Deskripsi singkat:saya membuat project formulir pendaftaran eskul.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <small class="text-muted">@ Properti ini milik Isal Anggararaja</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-white border-top">
+    <div class="container">
+      <h4 class="mb-3">Contact</h4>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" id="nama" class="form-control" placeholder="Nama lengkap" required>
+              <div class="invalid-feedback">Silakan isi nama.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="email@example.com" required>
+              <div class="invalid-feedback">Masukkan email yang valid.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea id="pesan" rows="4" class="form-control" placeholder="Tulis pesan..." required></textarea>
+              <div class="invalid-feedback">Silakan ketik pesan.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div id="formAlert" class="mt-3" style="display:none;"></div>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <h6>Ikuti terus saya</h6>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    (function () {
+      'use strict'
+      const form = document.getElementById('contactForm');
+      const alertBox = document.getElementById('formAlert');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+
+
+        alertBox.style.display = 'block';
+        alertBox.className = 'alert alert-success';
+        alertBox.innerText = 'Pesan terkirim! Terima kasih sudah menghubungi saya.';
+
+
+        form.reset();
+        form.classList.remove('was-validated');
+
+
+        setTimeout(() => {
+          alertBox.style.display = 'none';
+        }, 4000);
+      }, false);
+    })();
+  </script>
+</body>
+</html>
